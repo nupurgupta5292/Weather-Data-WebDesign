@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+
+        <title>Latitude vs Max Temperature</title>
+        <!-- Importing Bootstrap predefined CSS and JS files for the Navbar to work -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Importing style.css with usr defined styling -->
+        <link rel="stylesheet" href="style.css">
+      
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+            <a class="navbar-brand latitude rounded-pill" href="index.html" style="color: white;">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="visualization1_temp.html" target="_blank">Max Temperature</a>
+                      <a class="dropdown-item" href="visualization2_humidity.html" target="_blank">Humidity</a>
+                      <a class="dropdown-item" href="visualization3_cloudiness.html" target="_blank">Cloudiness</a>
+                      <a class="dropdown-item" href="visualization4_wind.html" target="_blank">Wind Speed</a>
+                    </div>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html" target="_blank">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="datasource.html" target="_blank">Data</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="card col-sm-12 col-md-6 card-box">
+                <div class="card-header card-head-box"><h1 style="color: #000080">Max Temperature</h1></div>
+                    <div class="card-body">
+                        <img src="../Resources/Assets/lat_temp_plot.png" class="card-img-top" alt="Latitude vs Max Temperature">
+                        <div class="body-text">
+                            <p>Latitude is the measurement of the distance of a location on Earth from the Equator. From this Latitude vs Temperature plot, we can infer that latitude is one of the main factors affecting temperature. The cities located between latitudes -20° to 20° appear to have the highest temperatures. The further a place is away from the Equator, lower is its temperature. The northern temperature ranges appear to be greater than the southern ranges at corresponding latitudes. The relative difference in the northern and southern hemispheres seems to be greatest around 60° latitude where the southern hemisphere has almost no land. In general, places at higher latitudes are colder than places at lower latitudes.</p>
+                        </div>
+                    </div>
+                </div>
+
+              <!--Visualizations Grid-->
+                <div class=" card col-sm-12 col-md-4 card-box" style="height: 440px">
+                  <div class="card-header card-head-box">
+                    <h1 style="color: #000080">Visualizations</h1></div>
+                    <div class="card-body text-center">
+                      <a href="visualization1_temp.html" target="_blank"><img src="../Resources/Assets/lat_temp_plot.png" alt="Latitude vs. Max Temperature" class=" visual-box-image border border-info rounded-lg" height="160" width="160"></a>
+                      <a href="visualization2_humidity.html" target="_blank"><img src="../Resources/Assets/lat_hum_plot.png" alt="Latitude vs. Humidity" class=" visual-box-image" height="160" width="160"></a>
+                      <a href="visualization3_cloudiness.html" target="_blank"><img src="../Resources/Assets/lat_cloud_plot.png" alt="Latitude vs. Cloudiness" class=" visual-box-image" height="160" width="160"></a>
+                      <a href="visualization4_wind.html" target="_blank"><img src="../Resources/Assets/lat_wind_plot.png" alt="Latitude vs. Wind Speed" class=" visual-box-image" height="160" width="160"></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <footer>
+          <p style="color: white; text-align: center; font-size: smaller;">Developed for Data Analytics Bootcamp 2020 by Nupur Gupta</p>
+        </footer>
+    </body>
+</html>
