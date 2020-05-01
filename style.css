@@ -92,7 +92,7 @@ footer {
     padding-bottom: 1px;
     background-color: dimgray;
 }
-/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels
 @media (max-width: 480px) {
   .navbar ul {
       visibility: hidden;
@@ -110,9 +110,8 @@ footer {
 
   .navbar {
     background-color: #000080;
-  }
-
-  }
+    }
+  } */
 
   /* Styling for images in the visualizations card-box on every page. */
   .visual-box-image{

@@ -1,17 +1,18 @@
 <html lang="en">
     <head>
 
-        <title>Latitude vs Humidity</title>
+        <title>Latitude vs Wind Speed</title>
         <!-- Importing Bootstrap predefined CSS and JS files for the Navbar to work -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Importing style.css with usr defined styling -->
+        <!-- Importing style.css with user defined styling -->
         <link rel="stylesheet" href="style.css">
       
     </head>
     <body>
+        <!--Navigation Bar. Across Pages-->
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
             <a class="navbar-brand latitude rounded-pill" href="index.html" style="color: white;">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,31 +40,33 @@
               </ul>
             </div>
         </nav>
+          <!--Main Content Box. Across Pages-->
           <div class="container-fluid">
             <div class="row">
               <div class="card col-sm-12 col-md-6 card-box">
-                <div class="card-header card-head-box"><h1 style="color: #000080">Humidity</h1></div>
+                <div class="card-header card-head-box"><h1 style="color: #000080">Wind Speed</h1></div>
                     <div class="card-body">
-                        <img src="../Resources/Assets/lat_hum_plot.png" class="card-img-top" alt="Latitude vs Humidity">
+                        <img src="Resources/Assets/lat_wind_plot.png" class="card-img-top" alt="Latitude vs Wind Speed">
                         <div class="body-text">
-                            <p>From this Latitude vs Humidity plot, it doesn’t look like there's any direct relationship between the two. Apparently most of the cities seem to be located in areas with humidity over 60%. The reason could be attributed to more people prefering to live in cities built nearby rivers, lakes, bays or other water bodies, to assure adequate water supply. Very limited number of cities seem to be located in areas with humidity below 20%.</p>
+                            <p>From this Latitude vs Wind Speed plot, we can tell most of cities have wind speeds between 10mph to 20 mph. Very few cities have wind speeds above 20mph. There appears to be no direct relationship between the wind speed and latitude.</p>
                         </div>
                     </div>
                 </div>
 
-              <!--Visualizations Grid-->
-                <div class=" card col-sm-12 col-md-4 card-box" style="height: 440px">
+              <!--Visualizations Navigation Grid-->
+                <div class=" card col-sm-12 col-md-4 card-box h-50">
                   <div class="card-header card-head-box">
                     <h1 style="color: #000080">Visualizations</h1></div>
                     <div class="card-body text-center">
-                      <a href="visualization1_temp.html" target="_blank"><img src="../Resources/Assets/lat_temp_plot.png" alt="Latitude vs. Max Temperature" class=" visual-box-image" height="160" width="160"></a>
-                      <a href="visualization2_humidity.html" target="_blank"><img src="../Resources/Assets/lat_hum_plot.png" alt="Latitude vs. Humidity" class=" visual-box-image border border-info rounded-lg" height="160" width="160"></a>
-                      <a href="visualization3_cloudiness.html" target="_blank"><img src="../Resources/Assets/lat_cloud_plot.png" alt="Latitude vs. Cloudiness" class=" visual-box-image" height="160" width="160"></a>
-                      <a href="visualization4_wind.html" target="_blank"><img src="../Resources/Assets/lat_wind_plot.png" alt="Latitude vs. Wind Speed" class=" visual-box-image" height="160" width="160"></a>
+                      <a href="visualization1_temp.html" target="_blank"><img src="Resources/Assets/lat_temp_plot.png" alt="Latitude vs. Max Temperature" class=" visual-box-image" height="160" width="160"></a>
+                      <a href="visualization2_humidity.html" target="_blank"><img src="Resources/Assets/lat_hum_plot.png" alt="Latitude vs. Humidity" class=" visual-box-image" height="160" width="160"></a>
+                      <a href="visualization3_cloudiness.html" target="_blank"><img src="Resources/Assets/lat_cloud_plot.png" alt="Latitude vs. Cloudiness" class=" visual-box-image" height="160" width="160"></a>
+                      <a href="visualization4_wind.html" target="_blank"><img src="Resources/Assets/lat_wind_plot.png" alt="Latitude vs. Wind Speed" class=" visual-box-image border border-info rounded-lg" height="160" width="160"></a>
                     </div>
                 </div>
             </div>
           </div>
+        <!--Constant Footer. Across Pages-->
         <footer>
           <p style="color: white; text-align: center; font-size: smaller;">Developed for Data Analytics Bootcamp 2020 by Nupur Gupta</p>
         </footer>
